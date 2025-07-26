@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import os
 
-TOKEN = os.environ["8266260672:AAHCXzXfsaE3gmkFs5g0-faR43o38_W30NQ"]
+TOKEN = os.environ["BOT_TOKEN"]  
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("✅ ربات با موفقیت راه افتاد!")
